@@ -4,6 +4,11 @@ class GroupsController < ApplicationController
     @groups = @user.groups
   end
 
+  def show
+    @group = Group.find(params[:id])
+    @entities = @group.entities.order("created_at DESC")
+  end
+
   def new
     @group = Group.new
   end
