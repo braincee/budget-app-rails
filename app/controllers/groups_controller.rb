@@ -1,5 +1,7 @@
 class GroupsController < ApplicationController
-  def index; end
+  def index
+    @user = current_user
+  end
 
   def create; end
 
