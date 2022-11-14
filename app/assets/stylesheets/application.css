@@ -15,24 +15,34 @@
  */
 
 body {
-  font-family: "Times New Roman", Times, serif;
-  color: rgb(87, 95, 104);
+  font-family: "Times Roman", sans-serif;
+  color: rgb(68, 74, 82);
 }
 
 .primary-color {
-  background: rgb(56, 130, 214);
+  background: rgb(62, 117, 180);
+}
+
+.green {
+  background: rgb(95, 168, 43);
 }
 
 .white-text {
-  color: rgb(230, 231, 231);
+  color: rgb(240, 240, 240);
 }
 
 .menu-btn {
   background-color: transparent;
   border: none;
   outline: none;
-  color: rgb(243, 243, 243);
-  font-size: 25px;
+  color: rgb(241, 241, 241);
+  font-size: 22px;
+}
+
+.fa-house {
+  color: rgb(243, 242, 242);
+  font-size: 18px;
+  margin-right: 8px;
 }
 
 .category-icon {
@@ -43,5 +53,10 @@ body {
 }
 
 .category-name {
-  color: rgb(142, 142, 143);
+  color: rgb(89, 98, 107);
+  text-decoration: none;
+}
+
+.gray-text {
+  color: rgb(99, 111, 124);
 }

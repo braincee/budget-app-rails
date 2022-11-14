@@ -1,18 +1,17 @@
 <div class="container-fluid d-flex flex-column align-items-center">
-  <%= link_to 'Add a new category', new_group_path, class: "btn btn-primary" %>
   <% unless @groups.empty? %>
     <% @groups.each do |group| %>
-      <div class="card mt-3 mb-1" style="width: 95%;">
+      <div class="card mt-2 mb-1" style="width: 95%;">
         <div class="card-body d-flex">
-          <div class="w-25">
-            <img src=<%= group.icon %> class="category-icon" alt="category icon">
+          <div>
+            <img src=<%= group.icon %> class="category-icon me-2" alt="category icon">
           </div>
           <div class="w-75 d-flex justify-content-between align-items-center mx-2">
             <div class="d-flex flex-column justify-content-center">
-              <h5 class="card-title category-name"><%=group.name%></h5>
+              <%= link_to "#{group.name}", group_path(group.id), class:"card-title category-name fs-5 stretched-link" %>
               <p class="card-text mt-2"><small class="text-muted"><%=group.created_at.strftime("%d %b %Y")%></small></p>
             </div>
-            <p class="card-text fw-semibold">$20</p>
+            <p class="card-text fw-semibold">$<%= group.spendings.sum(:amount) %></p>
           </div>
         </div>
       </div>
@@ -20,4 +19,5 @@
   <% else %>
     <h3 class="mt-4">You don't have any categories yet.</h2>
   <% end %>
+  <%= link_to 'Add a new category', new_group_path, class: "btn green mt-5 py-2 px-5 text-white fs-5" %>
 </div>
