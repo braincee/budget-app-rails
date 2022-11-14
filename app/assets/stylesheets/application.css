@@ -13,50 +13,60 @@
  *= require_tree .
  *= require_self
  */
+ @import url("href=https://fonts.googleapis.com/css?family=Trirong");
 
-body {
-  font-family: "Times Roman", sans-serif;
-  color: rgb(68, 74, 82);
-}
-
-.primary-color {
-  background: rgb(62, 117, 180);
-}
-
-.green {
-  background: rgb(95, 168, 43);
-}
-
-.white-text {
-  color: rgb(240, 240, 240);
-}
-
-.menu-btn {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  color: rgb(241, 241, 241);
-  font-size: 22px;
-}
-
-.fa-house {
-  color: rgb(243, 242, 242);
-  font-size: 18px;
-  margin-right: 8px;
-}
-
-.category-icon {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 3px;
-}
-
-.category-name {
-  color: rgb(89, 98, 107);
-  text-decoration: none;
-}
-
-.gray-text {
-  color: rgb(99, 111, 124);
-}
+ body {
+   font-family: Georgia, 'Times New Roman', Times, sans-serif;
+   color: rgb(87, 95, 104);
+ }
+ 
+ .primary-color {
+   background: rgb(66, 106, 151);
+ }
+ 
+ .green {
+   background: rgb(90, 146, 49);
+ }
+ 
+ .white-text {
+   color: rgb(235, 236, 236);
+ }
+ 
+ .background-screen {
+   height: 100vh;
+   background-image: url('assets/images/background.webp');
+ }
+ 
+ .background-logo {
+   font-family: "Trirong", serif;
+ }
+ 
+ .menu-btn {
+   background-color: transparent;
+   border: none;
+   outline: none;
+   color: rgb(235, 235, 235);
+   font-size: 22px;
+ }
+ 
+ .fa-house {
+   color: rgb(243, 242, 242);
+   font-size: 18px;
+   margin-right: 8px;
+ }
+ 
+ .category-icon {
+   width: 80px;
+   height: 80px;
+   object-fit: cover;
+   border-radius: 3px;
+ }
+ 
+ .category-name {
+   color: rgb(91, 98, 105);
+   text-decoration: none;
+ }
+ 
+ .gray-text {
+   color: rgb(75, 82, 90);
+ }
