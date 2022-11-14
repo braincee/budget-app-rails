@@ -13,3 +13,35 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(87, 95, 104);
+}
+
+.primary-color {
+  background: rgb(56, 130, 214);
+}
+
+.white-text {
+  color: rgb(230, 231, 231);
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: rgb(243, 243, 243);
+  font-size: 25px;
+}
+
+.category-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.category-name {
+  color: rgb(142, 142, 143);
+}
