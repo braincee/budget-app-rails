@@ -16,23 +16,32 @@
 
  body {
     font-family: Poppins;
-    color: rgb(69, 73, 76);
+    color: rgb(87, 95, 104);
   }
   
   .primary-color {
-    background: rgb(63, 102, 148);
+    background: rgb(56, 130, 214);
   }
   
   .white-text {
-    color: rgb(217, 218, 219);
+    color: rgb(230, 231, 231);
   }
   
   .menu-btn {
     background-color: transparent;
     border: none;
     outline: none;
-    color: rgb(255, 255, 255);
+    color: rgb(243, 243, 243);
     font-size: 25px;
   }
-
   
+  .category-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 3px;
+  }
+  
+  .category-name {
+    color: rgb(142, 142, 143);
+  }
