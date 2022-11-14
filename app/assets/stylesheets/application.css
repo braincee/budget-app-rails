@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+    font-family: Poppins;
+    color: rgb(69, 73, 76);
+  }
+  
+  .primary-color {
+    background: rgb(63, 102, 148);
+  }
+  
+  .white-text {
+    color: rgb(217, 218, 219);
+  }
+  
+  .menu-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+  }
+
+  
