@@ -44,4 +44,5 @@ body {
 
 .category-name {
   color: rgb(142, 142, 143);
+  text-decoration: none;
 }
