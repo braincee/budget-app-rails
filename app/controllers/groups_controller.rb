@@ -6,7 +6,7 @@ class GroupsController < ApplicationController
 
   def show
     @group = Group.find(params[:id])
-    @entities = @group.entities.order("created_at DESC")
+    @entities = @group.entities.order('created_at DESC')
   end
 
   def new
