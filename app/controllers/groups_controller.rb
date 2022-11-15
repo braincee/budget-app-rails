@@ -5,7 +5,7 @@ class GroupsController < ApplicationController
     return unless current_user
 
     @user = current_user
-    @groups = @user.groups
+    @groups = @user.groups.includes(:entities)
   end
 
   def show

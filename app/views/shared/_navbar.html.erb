@@ -1,6 +1,6 @@
 <div class="collapse primary-color text-white" id="navbarToggleExternalContent">
   <div class="collapse navbar-collapse d-flex flex-column align-items-center" id="navbarTogglerDemo01">
-    <h1 class="navbar-brand fs-3 fw-semibold mt-4 mb-3">Budget Manager</h1>
+    <h1 class="navbar-brand fs-3 fw-semibold mt-4 mb-3">Budget Application</h1>
     <ul class="navbar-nav d-flex flex-column align-items-center me-auto mb-2 mb-lg-0 w-100">
       <li class="nav-item">
         <%= link_to "Categories", root_path, class: "nav-link active fs-6" %>
@@ -20,6 +20,10 @@
     <button class="menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span><i class="fa-solid fa-bars"></i></span>
     </button>
+    <h3 class="text-white mt-1">
+      <% if controller.controller_name == 'groups' && controller.action_name != 'show' %> Categories <% end %>
+      <% if (controller.controller_name == 'groups' && controller.action_name == 'show') || controller.controller_name == 'spendings' %> Transactions <% end %>
+    </h3>
     <%= link_to '<i class="fa-solid fa-house"></i>'.html_safe, root_path %>
   </div>
 </nav>
