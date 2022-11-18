@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Rails transaction app
+# Rails Budget Application
 
-This Ruby on Rails is about building a mobile web application where user can manage your budget: user has a list of transactions associated with a category, so that he can see how much money he spent and on what. The application that allows the user to:
+This Ruby on Rails is about building a Backend web application where user can manage your budget: user has a list of transactions associated with a category, so that he can see how much money he spent and on what. The application that allows the user to:
 - register and log in, so that the data is private to them.
 - introduce new transactions associated with a category.
 - see the money spent on each category.
