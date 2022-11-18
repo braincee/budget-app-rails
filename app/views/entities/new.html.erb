@@ -11,6 +11,6 @@
     </div>
     <%= form.label :group_id, 'Please select a category (ctrl+click for multiple selection):', class: "form-label" %>
     <%= form.select :group_id, Group.order(:name).where(user:current_user).pluck(:name, :id), {}, {:multiple => true, required:true, :id => "groups", :class => "form-select mb-3" } %>
-    <%= form.submit 'Create transaction', class: "btn btn-outline-success text-white" %>
+    <%= form.submit 'Create transaction', class: "btn btn-outline-success text-black" %>
   <% end %>
 </div>
