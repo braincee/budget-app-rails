@@ -1,16 +1,6 @@
 class GroupsController < ApplicationController
-  before_action :authenticate_user!, except: [:index]
-
   def index
-    return unless current_user
-
-    @user = current_user
-    @groups = @user.groups.includes(:entities)
-  end
-
-  def show
-    @group = Group.find(params[:id])
-    @entities = @group.entities.order('created_at DESC')
+    @groups = current_user.groups.includes(:entities).all
   end
 
   def new
@@ -18,17 +8,22 @@ class GroupsController < ApplicationController
   end
 
   def create
-    @group = Group.new(group_params)
-    @group.user_id = current_user.id
+    @group = current_user.groups.new(group_params)
+    if @group.save
+      redirect_to groups_path(current_user.id)
+    else 
+      render :new
+    end
+  end
 
-    render :new unless @group.save
-
-    redirect_to groups_path
+  def show
+    @group = Group.find(params[:id])
+    @entities = @group.entities
   end
 
   private
 
   def group_params
-    params.require(:group).permit(:name, :icon)
+    params.require(:group).permit(:name, :icon, :icon_cache)
   end
 end
