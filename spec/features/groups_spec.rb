@@ -15,7 +15,7 @@ RSpec.describe 'Groups', type: :feature do
   end
 
   it 'should not have any categories yet' do
-    expect(page).to have_content("You don\'t have any categories yet.")
+    expect(page).to have_content("You don't have any categories yet.")
   end
 
   it 'should show the new category page' do
