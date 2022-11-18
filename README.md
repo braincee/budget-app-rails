@@ -1,4 +1,5 @@
-# R
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # Rails Budget Application
 
 This Ruby on Rails is about building a Backend web application where user can manage your budget: user has a list of transactions associated with a category, so that he can see how much money he spent and on what. The application that allows the user to:
@@ -8,22 +9,24 @@ This Ruby on Rails is about building a Backend web application where user can ma
 
 ## Built With
 
-* Ruby version
+- [x] Programming Language: Ruby
+- [x] Framework : Ruby on Rails
+- [x] Linter: [Rubocop](https://rubocop.org/)
+- [x] VS Code
 
-* System dependencies
+## Getting Started
 
-* Configuration
+To get a local copy up and running follow these simple example steps.
 
-* Database creation
+### Setup
 
-* Database initialization
+- Clone the repository
 
-* How to run the test suite
+`git clone  https://github.com/braincee/budget-app-rails.git`
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
+- Navigate to the folder
+  
+`cd budget-app`
 
 ## Live demo:
 You can check out the live demo [here](https://steve-budget-application.herokuapp.com/).
@@ -97,4 +100,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
