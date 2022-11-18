@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: budget-app
+  pool: 5
+  host: localhost
+  username: postgres
+  password: annor0543
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: budget-app-test
+  pool: 5
+  username: postgres
+  password: annor0543
+
+staging:
+  url: <%= ENV['DATABASE_URL'] %>
+
+production:
+  url: <%= ENV['DATABASE_URL'] %> 
+
