@@ -12,16 +12,16 @@
                 <%= link_to "#{group.name}", group_path(group.id), class:"card-title category-name fs-5 stretched-link" %>
                 <p class="card-text mt-2"><small class="text-muted"><%=group.created_at.strftime("%d %b %Y")%></small></p>
               </div>
-              <p class="card-text fw-semibold">$<%= group.entities.sum(:amount) %></p>
+              <p class="card-text fw-semibold">&<%= group.entities.sum(:amount) %></p>
             </div>
           </div>
         </div>
       <% end %>
     <% else %>
-      <h3 class="mt-4">You don't have any categories yet.</h2>
+      <h3 class="mt-4">You dont have any categories yet.</h2>
     <% end %>
-    <%= link_to 'Add a new category', new_group_path, class: "btn btn-outline-info text-black mt-5 py-2 px-5 fs-5" %>
+    <%= link_to 'Add a new category', new_group_path, class: "btn green mt-5 py-2 px-5 text-white fs-5" %>
   </div>
 <% else %>
-  <%= render partial: "shared/main" %>
+  <%= render partial: "shared/background" %>
 <% end %> 
