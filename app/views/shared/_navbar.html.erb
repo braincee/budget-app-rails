@@ -24,6 +24,6 @@
       <% if controller.controller_name == 'groups' && controller.action_name != 'show' %> Categories <% end %>
       <% if (controller.controller_name == 'groups' && controller.action_name == 'show') || controller.controller_name == 'entity' %> Transactions <% end %>
     </h3>
-    <%= link_to '<i class=" fa fa-arrow-left"></i>'.html_safe, root_path, class: " btn btn-alert"%>
+    <%= link_to '<i class=" fa fa-arrow-left"></i>'.html_safe, :back, class: " btn btn-alert"%>
   </div>
 </nav>
