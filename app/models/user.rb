@@ -11,3 +11,4 @@ class User < ApplicationRecord
   has_many :groups, dependent: :delete_all
   has_many :spendings, dependent: :delete_all
 end
+end
