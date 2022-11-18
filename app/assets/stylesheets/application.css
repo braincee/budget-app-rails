@@ -1,27 +1,11 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-@import url("href=https://fonts.googleapis.com/css?family=Trirong");
-
 body {
   font-family: Georgia, 'Times New Roman', Times, sans-serif;
   color: rgb(87, 95, 104);
 }
 
 .primary-color {
-  background: rgb(66, 106, 151);
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(24,205,219,0.3841911764705882) 100%);
 }
 
 .green {
@@ -34,11 +18,8 @@ body {
 
 .background-screen {
   height: 100vh;
-  background-image: url('assets/images/background.webp');
-}
-
-.background-logo {
-  font-family: "Trirong", serif;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(24,205,219,0.3841911764705882) 100%);
 }
 
 .menu-btn {
@@ -69,4 +50,14 @@ body {
 
 .gray-text {
   color: rgb(75, 82, 90);
+}
+
+.btn-success {
+  background: #5fb523;
+  border-color: #5fb523;
+}
+
+.btn-primary {
+  background: #3778c2;
+  border-color: #3778c2;
 }

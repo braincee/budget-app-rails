@@ -1,4 +1,4 @@
-<div class="container-fluid w-100 d-flex flex-column align-items-center mt-5">
+<div class="container-fluid w-100 d-flex flex-column align-items-center mt-5 background-screen">
   <h1>Create a new transaction:</h1>
   <%= form_with model: @entity, url: entities_path, method: :post, :html => {:class => "w-75 mt-4"} do |form| %>
     <div class="form-floating mb-3 w-100">
@@ -11,6 +11,6 @@
     </div>
     <%= form.label :group_id, 'Please select a category (ctrl+click for multiple selection):', class: "form-label" %>
     <%= form.select :group_id, Group.order(:name).where(user:current_user).pluck(:name, :id), {}, {:multiple => true, required:true, :id => "groups", :class => "form-select mb-3" } %>
-    <%= form.submit 'Create transaction', class: "btn green text-white" %>
+    <%= form.submit 'Create transaction', class: "btn btn-success text-white" %>
   <% end %>
 </div>
