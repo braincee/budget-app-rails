@@ -9,6 +9,5 @@ class User < ApplicationRecord
   validates :password, presence: true
 
   has_many :groups, dependent: :delete_all
-  has_many :spendings, dependent: :delete_all
-end
+  has_many :entities, dependent: :delete_all
 end
