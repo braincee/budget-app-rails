@@ -29,7 +29,7 @@ To get a local copy up and running follow these simple example steps.
 `cd budget-app`
 
 ## Live demo:
-You can check out the live demo [here](https://steve-budget-application.herokuapp.com/).
+You can check out the live demo [here](https://braincee-budget-app.herokuapp.com/).
 
 ## Presentation Video 
 
