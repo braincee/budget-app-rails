@@ -19,8 +19,4 @@ staging:
   url: <%= ENV['DATABASE_URL'] %>
 
 production:
-  url: <%= ENV['DATABASE_URL'] %> 
-  database: budget-app-production
-  username: postgres
-  password: annor0543
-
+  url: <%= ENV['DATABASE_URL'] %>
